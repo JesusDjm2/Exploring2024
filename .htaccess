@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redireccionar todo al directorio "public"
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+    # Forzar SSL
+    
+    # Redireccionar URLs que incluyan "public" a la raíz
+    RewriteRule ^public/(.*)$ /$1 [L,R=301]
+</IfModule>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^pachamamaspirit\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pachamamaspirit\.com$
+RewriteRule ^/?$ "https\:\/\/pachamamaspirit\.com\/" [R=301,L]

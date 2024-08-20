@@ -1,0 +1,1702 @@
+$color: #00a6d6;
+$yellow: #f8b900;
+$secundario: #283950;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    width: 202px;
+    padding-bottom: 0.8em;
+    margin-left: -3em;
+    margin-top: 1em;
+}
+
+.share {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.formTransparent {
+    input {
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+
+    textarea {
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+
+    select {
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+
+    .btnTransparent {
+        background: transparent;
+        margin-top: 3em;
+        border: none;
+        border-bottom: 1px solid $color;
+        border-radius: 10%;
+        position: relative;
+        overflow: hidden;
+        color: #000000;
+
+        &:hover {
+            color: #fff;
+            transition: 0.4 ease-in-out;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+            background-color: $color;
+            transition: height 0.3s ease-in-out;
+            z-index: -1;
+            /* Ajustar el valor del índice z para colocar el pseudo-elemento detrás del texto */
+        }
+
+        &:hover::before {
+            height: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+}
+
+.tab-content {
+    background: #c3c3c3 !important;
+}
+
+.nav {
+    background: #d8d8d8;
+
+    .nav-item {
+        border: 1px solid #72727270;
+    }
+}
+
+.tags {
+    margin-bottom: 1.5em;
+
+    a {
+        color: rgb(44 173 173) !important;
+        transition: 0.6s;
+        cursor: pointer;
+        margin-left: 0.5em;
+
+        &:hover {
+            color: #343434 !important;
+            transition: 0.6s;
+        }
+    }
+}
+
+.boton-blog-search {
+    background: #ffffff;
+    border: 1px solid #0000002b;
+    padding: 5px 10px 5px 10px;
+    color: #000;
+    border-radius: 6px;
+    transition: 0.5s;
+
+    &:hover {
+        color: #fff;
+        background: $color;
+        transition: 0.5s;
+        border-color: $color;
+    }
+}
+
+.form-control:focus {
+    border-color: #26b7e1 !important;
+    box-shadow: 0 0 0 0.25rem rgba(67, 207, 207, 0.034) !important;
+}
+
+.precio {
+    font-size: 35px;
+    text-align: center;
+}
+
+.linea-precio {
+    width: 60px;
+    height: 8px;
+    margin: auto;
+    background: $secundario;
+    margin-bottom: 1.2em;
+}
+
+.linea2-blogs {
+    border-bottom: 5px solid $color;
+    margin-bottom: 1em;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.compartir {
+    a {
+        background: $color;
+        color: #fff;
+        padding: 0.3em;
+        margin-left: 0.6em;
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        text-align: center;
+        border: solid 1px $color;
+        font-size: 16px;
+        transition: 0.6s;
+
+        &:hover {
+            background: #fff;
+            color: #26b7e1;
+            border: 1px solid #26b7e1;
+            transition: 0.6s;
+        }
+
+        i {
+            line-height: 20px;
+        }
+    }
+}
+
+.menupacha {
+    margin-left: 3em;
+}
+
+.menupacha li {
+    margin-left: 1em;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.circulo {
+    margin: auto;
+    text-align: center;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 72px;
+    width: 30.8px;
+    height: 46px;
+    margin-top: 2em;
+}
+
+.circulo i {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: -8px;
+    padding-top: 1em;
+    transition: 0.5s;
+}
+
+.circulo:hover i {
+    padding-top: 1.6em;
+    transition: 0.5s;
+    color: $color;
+}
+
+.circulo .desvanecer {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: -8px;
+    padding-top: 1em;
+    transition: 0.5s;
+}
+
+.custom-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.custom-carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: opacity 1s ease;
+    opacity: 0;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.custom-carousel-caption {
+    max-width: 900px;
+
+    h3 {
+        color: #fff;
+        text-shadow: 3px 3px 4px rgb(30, 53, 52);
+        text-align: center;
+        font-size: 2.5rem !important;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: #fff;
+        text-shadow: 3px 3px 4px rgb(30, 53, 52);
+        text-align: center;
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    a {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 1em;
+        padding: 0.3em 0.5em;
+        border-radius: 5px;
+        font-size: 14px;
+        border-bottom: 1px solid #26b7e1;
+        text-shadow: 3px 3px 4px rgb(30, 53, 52);
+        z-index: 10;
+        position: relative;
+        transition: 0.3s ease;
+
+        &:hover {
+            background: #26b7e1;
+            color: #fff;
+            transition: 0.3s ease;
+        }
+    }
+    .botonAbajo {
+        &:hover {
+            background: none;
+        }
+    }
+}
+.background-section {
+    background-image: url('../img/panoramico/qhapaq-nam-Camino-Inca.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .backCaminoInca {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);        
+    }
+    .contenido {
+        position: relative;
+        z-index: 1;
+        padding: 15px 40px;
+        background: rgba(52, 52, 52, 0.68);
+        border-radius: 5px;
+    
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+.custom-carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 28px;
+
+    &.prev {
+        left: 20px;
+        transition: 0.4s ease;
+        &:hover {
+            left: 15px;
+            transition: 0.4s ease;
+        }
+    }
+
+    &.next {
+        right: 20px;
+        transition: 0.4s ease;
+        &:hover {
+            right: 15px;
+            transition: 0.4s ease;
+        }
+    }
+}
+
+.circulo:hover .desvanecer {
+    opacity: 0;
+    transition: 2.2s;
+    padding-top: 2em;
+}
+
+.contenidoindex {
+    text-align: center;
+}
+
+.contenidoindex p {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 4px 1px #202020a6;
+}
+
+.contenidoindex a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 1em;
+    text-align: center;
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    font-size: 14px;
+    border-bottom: 1px solid #26b7e1;
+    text-shadow: 3px 3px 4px rgb(30 53 52);
+}
+
+.contenidoindex a:hover {
+    background: #26b7e1;
+    color: #fff;
+    transition: 0.6s ease;
+}
+
+.linea {
+    margin: auto;
+    margin-bottom: 1em;
+    width: 90px;
+    height: 2px;
+    background: #26b7e1;
+}
+
+.dashboard {
+    width: 100%;
+    height: 90px;
+    background: #1f6a7b;
+    margin-bottom: 2em;
+    align-items: center;
+    display: flex;
+}
+
+.dashboard ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.dashboard ul li {
+    float: left;
+    padding-right: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: revert;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.dashboard ul li a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.dashboard ul li a:hover {
+    transition: 0.5s;
+    color: #f1f1f1;
+}
+
+.botonsearch {
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+    border-style: none;
+    transition: 0.6s;
+}
+
+.botonsearch:hover {
+    color: #00a9a9;
+    transition: 0.6s;
+}
+
+#traslate {
+    margin-left: 2em;
+    background: #26b7e1;
+    padding: 4px 11px;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+}
+
+.img-card {
+    width: 100%;
+    height: 180px;
+}
+
+.enlacesCategoria {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.djmFormShow {
+    padding: 1.8em;
+    background: #283950;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.enlaceMapi {
+    color: #4db91e;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: 0.6s;
+}
+
+.enlaceMapi:hover {
+    font-size: 13px;
+    color: #4db91e;
+    transform: 0.6s;
+}
+
+.enlaceHike {
+    color: #e85f5f;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: 0.6s;
+}
+
+.enlaceHike:hover {
+    font-size: 13px;
+    color: #e85f5f;
+    transform: 0.6s;
+}
+
+.enlaceLuxury {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+    transform: 0.6s;
+}
+
+.enlaceLuxury:hover {
+    color: #777777;
+    transform: 0.6s;
+    font-size: 13px;
+}
+
+.enlaceFullday {
+    color: #940da0;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: 0.6s;
+}
+
+.enlaceFullday:hover {
+    color: #940da0;
+    transform: 0.6s;
+    font-size: 13px;
+}
+
+.enlaceAround {
+    color: #3f5dd3;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    transform: 0.6s;
+}
+
+.enlaceAround:hover {
+    color: #3f5dd3;
+    font-size: 13px;
+    transform: 0.6s;
+}
+
+#traslate:hover {
+    background: #fff;
+    color: #000;
+}
+
+.h1-index-book {
+    color: #fff;
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0.8em;
+}
+
+.texto-blog {
+    color: #000;
+    text-align: justify;
+}
+
+.relacionado-medio {
+    text-align: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.relacionado-medio a {
+    color: #000;
+    font-style: italic;
+}
+
+cajaWhatsApp {
+    width: 275px;
+    height: 240px;
+    background: #fff;
+    border: 2px solid #128c7e;
+    position: fixed;
+    bottom: 1em;
+    z-index: 999;
+    right: 1em;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+
+    &.visible {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.WhatsAppheader {
+    width: 100%;
+    height: 40px;
+    background: #128c7e;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.bg-white {
+    // Estilos para el padre con clase bg-white
+    h3 {
+        // Estilos para el h3 dentro del padre
+        text-align: center; // Centra el texto horizontalmente
+        margin-top: 4rem; // Espacio superior
+        margin-bottom: 2rem; // Espacio inferior
+
+        &::after {
+            // Estilos para la línea debajo del h3
+            content: "";
+            display: block;
+            width: 40px; // Ancho de la línea
+            height: 2px; // Grosor de la línea
+            background-color: #000; // Color de la línea
+            margin: 0 auto; // Centra la línea horizontalmente
+            margin-top: 0.5rem; // Espacio entre el h3 y la línea
+        }
+    }
+}
+.caruselExploringReviews {
+    .card {
+        background: #ebebeb;
+    }
+    .circuloTrip {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #00af87;
+        border-radius: 50%;
+        margin-right: 2px;
+    }
+    .circuloImagen {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .caruselExploringReviews {
+        .card {
+            width: 20rem !important;
+        }
+    }
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #128c7e;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.input-container {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #128c7e;
+}
+
+.message-input {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #128c7e;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    &:focus,
+    &:focus-visible {
+        border-color: #128c7e !important;
+        box-shadow: 0 0 5px rgba(18, 140, 126, 0.5) !important;
+    }
+}
+
+.send-btn {
+    width: 100%;
+    padding: 9px;
+    background: #fff;
+    color: #128c7e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.relacionado-medio:hover a {
+    color: #0d8c79;
+}
+
+.btn-whatsapp {
+    display: block;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
+}
+
+h2 {
+    color: $color;
+    position: relative;
+    font-size: 1.1em !important;
+    text-transform: uppercase;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: $yellow;
+        margin-top: 5px; // Espacio entre la línea y el texto
+    }
+}
+
+.boton-acordion {
+    border-style: none;
+    font-size: 16px;
+    text-align: left;
+}
+
+.boton-acordion:focus {
+    border-style: none;
+    outline: 0px;
+    outline: 0px auto;
+}
+
+.boton-acordion:hover {
+    font-weight: bold;
+}
+
+.linea-tours {
+    width: 200px;
+    height: 2px;
+    background: #767676;
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+.linea-blogs {
+    width: 100px;
+    height: 2px;
+    background: $color;
+    margin: auto;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+beige {
+    color: $color;
+}
+
+.tours-blog {
+    text-align: justify;
+}
+
+.tours-blog h4 {
+    border-bottom-style: dotted;
+    border-width: 2px;
+    margin-bottom: 0.5em;
+}
+
+.tours-blog .a {
+    color: #0c9287;
+    font-size: 20px;
+    padding-right: 0.4em;
+}
+
+.tours-blog .a:hover {
+    color: #006cff;
+}
+
+.tours-blog .b {
+    color: #375a5f;
+    font-size: 18px;
+    padding-right: 0.4em;
+}
+
+.tours-blog .b:hover {
+    color: #006cff;
+}
+
+.enlaces-tours {
+    font-weight: bold;
+    color: #0a9b9b;
+}
+
+.enlaces-blog {
+    display: block;
+    color: #000;
+    font-size: 18px;
+}
+
+.enlaces-blog:hover {
+    color: #0c9287;
+}
+
+.details {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    a {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $secundario;
+        letter-spacing: 0.1em;
+
+        &:hover {
+            color: $color;
+        }
+    }
+
+    p {
+        font-weight: 500 !important;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 5em;
+}
+
+.book-tours {
+    background: #364757;
+    padding: 10px 30px;
+}
+
+.book-tours h4 {
+    color: #fff;
+    text-align: center;
+}
+
+.book-tours label {
+    color: #fff;
+}
+
+.book-tours button {
+    margin-top: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.form-index {
+    margin-top: 25%;
+}
+
+.boton-index {
+    background: $color;
+    border: 1px solid $color;
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.6s;
+
+    &:hover {
+        background: $yellow;
+        color: #000;
+        transition: 0.6s;
+        border: 1px solid $yellow;
+        border-width: 1px;
+    }
+}
+
+.titulosTours {
+    text-align: center;
+    color: #fff;
+}
+
+.div-form-tours {
+    position: sticky;
+    top: 3.5em;
+    margin: 1em;
+}
+
+.row-menu {
+    width: 100%;
+}
+
+.icon-menu {
+    float: left;
+}
+
+.h1-index {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3em;
+    margin-bottom: 0.6em;
+}
+
+.h2-tierras {
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.iconos-tours {
+    padding-bottom: 2em;
+}
+
+.p-banner a {
+    color: #fff;
+    background: $color;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.p-banner a:hover {
+    background: #003fa7;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.h1-destinos {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    margin-top: 4.2em;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.paneles li {
+    list-style: none;
+}
+
+.h3-book-pop-up {
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+    width: 150px;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #333;
+    color: #fff;
+    font-weight: 800;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    text-align: left;
+    padding: 5px 20px;
+    bottom: -1.6em;
+    left: 100%;
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 6px;
+}
+
+[data-title] {
+    position: relative;
+}
+
+.space {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.full-img {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.full-img-card {
+    width: 25%;
+    height: 300px;
+    background: grey;
+    display: block;
+    float: left;
+}
+
+.oscuro {
+    background: transparent;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.uno:hover .oscuro {
+    background: #00000087;
+    transition: 1s;
+}
+
+.uno {
+    background: url("../img/thumb/salkantay-trek.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+.dos {
+    background: url("../img/thumb/machu-picchu-travel-tour.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+.tres {
+    background: url("../img/thumb/City-Tour-en-Sacsayhuaman-Cusco-Peru.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cuatro {
+    background: url("../img/thumb/tejedora-chinchero.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+.dos:hover .oscuro {
+    background: #00000087;
+    transition: 1s;
+}
+
+.tres:hover .oscuro {
+    background: #00000087;
+    transition: 1s;
+}
+
+.cuatro:hover .oscuro {
+    background: #00000087;
+    transition: 1s;
+}
+
+.full-img h5 {
+    color: #fff;
+    text-align: center;
+    padding-top: 5em;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.full-img p {
+    margin-left: -40em;
+    transition: 1s;
+    color: #fff;
+}
+
+.uno:hover p {
+    margin-left: 0em;
+    text-align: center;
+    transition: 1s;
+}
+
+.dos:hover p {
+    margin-left: 0em;
+    text-align: center;
+    transition: 1s;
+}
+
+.tres:hover p {
+    margin-left: 0em;
+    text-align: center;
+    transition: 1s;
+}
+
+.cuatro:hover p {
+    margin-left: 0em;
+    text-align: center;
+    transition: 1s;
+}
+
+.full-img a {
+    margin-right: -40em;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    padding: 10px 15px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.oscuro a:hover {
+    margin-right: 0em;
+    transition: 1s;
+    color: #fff;
+}
+
+.uno:hover a {
+    margin-right: 0em;
+    transition: 1s;
+}
+
+.dos:hover a {
+    margin-right: 0em;
+    transition: 1s;
+}
+
+.tres:hover a {
+    margin-right: 0em;
+    transition: 1s;
+}
+
+.cuatro:hover a {
+    margin-right: 0em;
+    transition: 1s;
+}
+
+.full-img a:hover {
+    background: $color;
+    border-style: none;
+}
+.edicion {
+    position: fixed;
+    top: 20em;
+    left: -5.5em;
+    background: $color;
+    padding: 0.6em;
+    z-index: 999;
+    border-radius: 0 5px 5px 0;
+    transition: 0.4s ease;
+    &:hover {
+        background: $yellow;
+        left: 0;
+        a {
+            color: #000;
+            transition: 0.4s ease;
+        }
+    }
+    a {
+        color: #fff;
+        transition: 0.4s ease;
+    }
+}
+
+.card-new {
+    transition: 0.6s;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 20px !important;
+    background: transparent !important;
+    width: 100% !important;
+    .card-img-top {
+        height: 230px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.6s;
+        background: #fff !important;
+    }
+
+    h5 {
+        position: relative;
+        display: inline-block; // Permite que la línea se ajuste al contenido del h5
+
+        &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 1px;
+            background-color: rgb(52 52 52 / 89%);
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    @media (max-width: 768px) {
+        /* Cambia este valor según tus necesidades */
+        width: 21rem !important;
+    }
+}
+
+.redes {
+    .icon-twitter {
+        color: #fff;
+        background: #2ab1ff;
+        border-radius: 38px;
+        padding: 0.3em;
+    }
+
+    .icon-facebook {
+        color: #fff;
+        background: #003fa7;
+        border-radius: 38px;
+        padding: 0.3em;
+    }
+
+    .icon-youtube-play {
+        color: #fff;
+        background: red;
+        border-radius: 38px;
+        padding: 0.3em;
+    }
+
+    .icon-instagram {
+        background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4);
+        color: #fff;
+        border-radius: 38px;
+        padding: 0.3em;
+    }
+
+    .icon-tripadvisor {
+        color: #fff;
+        background: green;
+        border-radius: 38px;
+        padding: 0.3em;
+    }
+    .fa-tiktok{
+        background: #fff;
+        color: #000;
+        border-radius: 38px;
+        padding: 0.3em;
+    }
+}
+
+.blogs {
+    -webkit-box-flex: 0;
+    width: 25%;
+    border-style: none;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+
+    .black {
+        background: transparent;
+        transition: 1s;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &:hover .black {
+        background: #00000080;
+    }
+
+    &:hover p {
+        margin-left: 0em;
+        font-size: 13px;
+        transition: 0.6s;
+    }
+
+    &:hover h2 {
+        opacity: 1;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 18px !important;
+        padding-top: 45px;
+        opacity: 0.9;
+        transition: 1s;
+        text-shadow: 2px 2px 2px black;
+        &:after {
+            content: none !important;
+            display: none !important;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 0px;
+        margin-left: -50em;
+        color: #fff;
+        padding: 1.2em;
+        transition: 0.6s;
+    }
+
+    .fecha {
+        margin-right: -50em;
+        transition: 1s;
+    }
+
+    &:hover .fecha {
+        margin-right: 0%;
+    }
+
+    a {
+        text-align: center;
+        color: #fff;
+        background: transparent;
+        padding: 10px 15px;
+        border-style: solid;
+        border-color: #fff;
+        font-size: 12px;
+        border-width: 1px;
+        border-radius: 4px;
+        display: none;
+        transition: 1s;
+
+        &:hover {
+            background: $color;
+            border-style: none;
+            color: #fff;
+            transition: 0.8s;
+        }
+    }
+
+    &:hover a {
+        margin-right: 0em;
+        display: inline;
+        transition: 1s;
+    }
+}
+
+.blogimg {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.blogSpace {
+    transition: 0.5s;
+    margin-bottom: 1em;
+
+    &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        transition: 0.5s;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.imgCuadrada {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    position: initial;
+}
+
+.boton-card {
+    background: $color;
+    padding: 8px 15px 8px 15px;
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.6s;
+    border-style: none;
+    font-size: 14px;
+
+    &:hover {
+        background: $yellow;
+        color: #000;
+        transition: 0.6s;
+    }
+}
+
+.btn-pacha {
+    background: #6e6e6e;
+    border-style: none;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 5px;
+}
+
+.text-card {
+    color: #2f2f2f;
+    text-align: justify;
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    background: #343434;
+    font-size: 15px;
+    .h4-foot {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 3em;
+    }
+    p {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0em;
+    }
+    .linea-foot {
+        height: 3px;
+        width: 15%;
+        background: $color;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    .a-foot {
+        color: #fff;
+        display: block;
+        font-size: 15px;
+    }
+
+    .a-foot:hover {
+        color: $yellow;
+    }
+
+    .social-foot {
+        text-align: center;
+        a {
+            color: #fff;
+            font-size: 20px;
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer .h4-foot,
+    footer p,
+    footer .a-foot,
+    footer .social-foot a,
+    .social-foot {
+        text-align: left !important;
+    }
+
+    footer .linea-foot {
+        margin-left: 0;
+    }
+}
+
+.banner {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #000000a8, #00000075),
+        url(../img/panoramico/lares-trek.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.banner-destinos {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #000000a8, #00000075),
+        url(../img/panoramico/los-mejores-destinos-para-peru.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.banner-imperdible {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #00000036, #00000026),
+        url(../img/panoramico/cusco-imperdible-tierras-vivas.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.banner-aventuras {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #000000a8, #00000075),
+        url(../img/panoramico/camino-inca-reserva.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.banner-container {
+    margin: auto;
+    width: 45%;
+}
+
+.h3-banner {
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 2.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.p-banner {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.copy {
+    text-align: center;
+    color: #fff;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top-style: solid;
+    border-width: 0.1px;
+    padding-bottom: 2em;
+    border-top-color: #ffffff57;
+}
+
+.copy h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.copy .djm2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.copy .djm2:hover {
+    color: $yellow;
+}
+
+.castellano-es {
+    font-weight: 600;
+    background: #26b7e1;
+    padding: 4px 10px;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 11px;
+    transition: 0.8s;
+    text-transform: uppercase;
+
+    .castellano-es:hover {
+        background: #fff;
+        color: #000;
+        transition: 0.8s;
+    }
+
+    .castellano-es:focus {
+        outline: none;
+    }
+}
+
+.display-foot {
+    display: block;
+}
+
+.display-foot-2 {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo {
+        margin-left: -1.5em;
+    }
+
+    .h1-destinos {
+        margin-top: 6em;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 912px) {
+    .castellano-es {
+        margin-top: 2em;
+        margin-left: 1em;
+        font-size: 14px;
+    }
+
+    .display-foot {
+        display: none;
+    }
+
+    .display-foot-2 {
+        display: inline;
+    }
+
+    .logo {
+        margin-left: 0em;
+    }
+
+    .form-index {
+        margin-top: 55%;
+    }
+
+    .row-menu {
+        width: 100%;
+    }
+
+    .icon-menu {
+        float: right;
+    }
+
+    .h1-index-book {
+        font-size: 1.6em;
+    }
+
+    .full-img-card {
+        width: 100%;
+    }
+
+    .h1-destinos {
+        font-size: 1.8em;
+        margin-top: 7em;
+    }
+
+    .banner-container {
+        width: 90%;
+    }
+
+    .h3-banner {
+        font-size: 2.4em;
+    }
+
+    .banner {
+        background: linear-gradient(to bottom right, #000000a8, #00000075),
+            url(../img/responsive/reservas-camino-inca-peru.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-content: center;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .banner-destinos {
+        background: linear-gradient(to bottom right, #000000a8, #00000075),
+            url(../img/responsive/los-mejores-destinos-para-peru.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-content: center;
+        background-size: cover;
+    }
+
+    .banner-aventuras {
+        background: linear-gradient(to bottom right, #000000a8, #00000075),
+            url(../img/responsive/camino-inca-reserva.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-content: center;
+        background-size: cover;
+    }
+}

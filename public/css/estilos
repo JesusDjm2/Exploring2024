@@ -1,0 +1,1160 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 232px;
+  padding-bottom: 0.8em;
+  margin-left: -3em;
+}
+
+.share {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.tab-content {
+  background: #c3c3c3;
+  /* border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #80808012; */
+}
+
+.compartir a {
+  background: #43cfcf;
+  color: #fff;
+  padding: 0.3em;
+  margin-left: 0.6em;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  border: solid 1px #43cfcf;
+  font-size: 16px;
+  transition: 0.6s;
+}
+.compartir a:hover {
+  background: #fff;
+  color: #43cfcf;
+  border: 1px solid #43cfcf;
+  transition: 0.6s;
+}
+.compartir a i {
+  line-height: 20px;
+}
+
+.menupacha {
+  margin-left: 3em;
+}
+
+.menupacha li {
+  margin-left: 1em;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.circulo {
+  margin: auto;
+  text-align: center;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 72px;
+  width: 30.8px;
+  height: 46px;
+  margin-top: 2em;
+}
+
+.circulo i {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  margin: -8px;
+  padding-top: 1em;
+  transition: 0.5s;
+}
+
+.circulo:hover i {
+  padding-top: 1.6em;
+  transition: 0.5s;
+  color: #3ebdbd;
+}
+
+.circulo .desvanecer {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  margin: -8px;
+  padding-top: 1em;
+  transition: 0.5s;
+}
+
+.circulo:hover .desvanecer {
+  opacity: 0;
+  transition: 2.2s;
+  padding-top: 2em;
+}
+
+.contenidoindex {
+  text-align: center;
+}
+
+.contenidoindex p {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 4px 1px rgba(32, 32, 32, 0.6509803922);
+}
+
+.contenidoindex a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.contenidoindex a:hover {
+  color: #3ebdbd;
+}
+
+.dashboard {
+  width: 100%;
+  height: 90px;
+  background: #1f6a7b;
+  margin-bottom: 2em;
+  align-items: center;
+  display: flex;
+}
+
+.dashboard ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.dashboard ul li {
+  float: left;
+  padding-right: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: revert;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.dashboard ul li a {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.dashboard ul li a:hover {
+  transition: 0.5s;
+  color: #f1f1f1;
+}
+
+.botonsearch {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border-style: none;
+  transition: 0.6s;
+}
+
+.botonsearch:hover {
+  color: #00a9a9;
+  transition: 0.6s;
+}
+
+#traslate {
+  margin-left: 2em;
+  background: #43cfcf;
+  padding: 4px 11px;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+
+.img-card {
+  width: 100%;
+  height: 180px;
+}
+
+.enlacesCategoria {
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.djmFormShow {
+  padding: 1.8em;
+  background: #283950;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.enlaceMapi {
+  color: #4db91e;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  transform: 0.6s;
+}
+
+.enlaceMapi:hover {
+  font-size: 13px;
+  color: #4db91e;
+  transform: 0.6s;
+}
+
+.enlaceHike {
+  color: #e85f5f;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  transform: 0.6s;
+}
+
+.enlaceHike:hover {
+  font-size: 13px;
+  color: #e85f5f;
+  transform: 0.6s;
+}
+
+.enlaceLuxury {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #777777;
+  transform: 0.6s;
+}
+
+.enlaceLuxury:hover {
+  color: #777777;
+  transform: 0.6s;
+  font-size: 13px;
+}
+
+.enlaceFullday {
+  color: #940da0;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  transform: 0.6s;
+}
+
+.enlaceFullday:hover {
+  color: #940da0;
+  transform: 0.6s;
+  font-size: 13px;
+}
+
+.enlaceAround {
+  color: #3f5dd3;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  transform: 0.6s;
+}
+
+.enlaceAround:hover {
+  color: #3f5dd3;
+  font-size: 13px;
+  transform: 0.6s;
+}
+
+#traslate:hover {
+  background: #fff;
+  color: #000;
+}
+
+.h1-index-book {
+  color: #fff;
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.8em;
+}
+
+.texto-blog {
+  color: #000;
+  text-align: justify;
+}
+
+.relacionado-medio {
+  text-align: center;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 10px 60px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.relacionado-medio a {
+  color: #000;
+  font-style: italic;
+}
+
+.relacionado-medio:hover a {
+  color: #0d8c79;
+}
+
+.btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+}
+
+h2 {
+  color: #0dadad;
+  font-size: 1.4em !important;
+}
+
+.boton-acordion {
+  border-style: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.boton-acordion:focus {
+  border-style: none;
+  outline: 0px;
+  outline: 0px auto;
+}
+
+.boton-acordion:hover {
+  font-weight: bold;
+}
+
+.linea-tours {
+  width: 200px;
+  height: 2px;
+  background: #767676;
+  margin: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+
+.linea-blogs {
+  width: 200px;
+  height: 2px;
+  background: #3ebdbd;
+  margin: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+
+beige {
+  color: #3ebdbd;
+}
+
+.tours-blog {
+  text-align: justify;
+}
+
+.tours-blog h4 {
+  border-bottom-style: dotted;
+  border-width: 2px;
+  margin-bottom: 0.5em;
+}
+
+.tours-blog .a {
+  color: #0c9287;
+  font-size: 20px;
+  padding-right: 0.4em;
+}
+
+.tours-blog .a:hover {
+  color: #006cff;
+}
+
+.tours-blog .b {
+  color: #375a5f;
+  font-size: 18px;
+  padding-right: 0.4em;
+}
+
+.tours-blog .b:hover {
+  color: #006cff;
+}
+
+.enlaces-tours {
+  font-weight: bold;
+  color: #0a9b9b;
+}
+
+.enlaces-blog {
+  display: block;
+  color: #000;
+  font-size: 18px;
+}
+
+.enlaces-blog:hover {
+  color: #0c9287;
+}
+
+.details {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.details p {
+  color: #000;
+}
+
+.details a {
+  color: #000;
+}
+
+.details a:hover {
+  color: #2fa69b;
+}
+
+.sticky {
+  position: sticky;
+  top: 4em;
+}
+
+.book-tours {
+  background: #364757;
+  padding: 10px 30px;
+}
+
+.book-tours h4 {
+  color: #fff;
+  text-align: center;
+}
+
+.book-tours label {
+  color: #fff;
+}
+
+.book-tours button {
+  margin-top: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.form-index {
+  margin-top: 25%;
+}
+
+.boton-index {
+  background: #00a9a9;
+  border-style: none;
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.6s;
+}
+
+.titulosTours {
+  text-align: center;
+  color: #fff;
+}
+
+.div-form-tours {
+  position: sticky;
+  top: 3.5em;
+  margin: 1em;
+}
+
+.boton-index:hover {
+  background: #fff;
+  color: #000;
+  font-weight: 500;
+  transition: 0.6s;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.row-menu {
+  width: 100%;
+}
+
+.icon-menu {
+  float: left;
+}
+
+.h1-index {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 3em;
+  margin-bottom: 0.6em;
+}
+
+.h2-tierras {
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.iconos-tours {
+  padding-bottom: 2em;
+}
+
+.p-banner a {
+  color: #fff;
+  background: #2fa69b;
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.p-banner a:hover {
+  background: #003fa7;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.h1-destinos {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  margin-top: 6em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.paneles li {
+  list-style: none;
+}
+
+.h3-book-pop-up {
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+  width: 150px;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #333;
+  color: #fff;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  position: absolute;
+  text-align: left;
+  padding: 5px 20px;
+  bottom: -1.6em;
+  left: 100%;
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+  border-radius: 6px;
+}
+
+[data-title] {
+  position: relative;
+}
+
+.space {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.full-img {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.full-img-card {
+  width: 25%;
+  height: 300px;
+  background: grey;
+  display: block;
+  float: left;
+}
+
+.oscuro {
+  background: transparent;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.uno:hover .oscuro {
+  background: rgba(0, 0, 0, 0.5294117647);
+  transition: 1s;
+}
+
+.uno {
+  background: url("../img/thumb/salkantay-trek.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+.dos {
+  background: url("../img/thumb/machu-picchu-travel-tour.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+.tres {
+  background: url("../img/thumb/turismo-en-peru.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+.cuatro {
+  background: url("../img/thumb/tejedora-chinchero.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+.dos:hover .oscuro {
+  background: rgba(0, 0, 0, 0.5294117647);
+  transition: 1s;
+}
+
+.tres:hover .oscuro {
+  background: rgba(0, 0, 0, 0.5294117647);
+  transition: 1s;
+}
+
+.cuatro:hover .oscuro {
+  background: rgba(0, 0, 0, 0.5294117647);
+  transition: 1s;
+}
+
+.full-img h5 {
+  color: #fff;
+  text-align: center;
+  padding-top: 5em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.full-img p {
+  margin-left: -40em;
+  transition: 1s;
+  color: #fff;
+}
+
+.uno:hover p {
+  margin-left: 0em;
+  text-align: center;
+  transition: 1s;
+}
+
+.dos:hover p {
+  margin-left: 0em;
+  text-align: center;
+  transition: 1s;
+}
+
+.tres:hover p {
+  margin-left: 0em;
+  text-align: center;
+  transition: 1s;
+}
+
+.cuatro:hover p {
+  margin-left: 0em;
+  text-align: center;
+  transition: 1s;
+}
+
+.full-img a {
+  margin-right: -40em;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  padding: 10px 15px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 4px;
+  transition: 1s;
+}
+
+.oscuro a:hover {
+  margin-right: 0em;
+  transition: 1s;
+  color: #fff;
+}
+
+.uno:hover a {
+  margin-right: 0em;
+  transition: 1s;
+}
+
+.dos:hover a {
+  margin-right: 0em;
+  transition: 1s;
+}
+
+.tres:hover a {
+  margin-right: 0em;
+  transition: 1s;
+}
+
+.cuatro:hover a {
+  margin-right: 0em;
+  transition: 1s;
+}
+
+.full-img a:hover {
+  background: #2fa69b;
+  border-style: none;
+}
+
+.card-new {
+  transition: 0.6s;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.card-new:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.6s;
+}
+
+.blogs {
+  -webkit-box-flex: 0;
+  width: 25%;
+  border-style: none;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+
+.blogimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.blogSpace {
+  margin: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+
+.blogSpace p {
+  text-align: left;
+}
+
+.blogSpace:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: 0.5s;
+}
+
+.imgCuadrada {
+  width: 100%;
+  height: 80px;
+}
+
+.blogs:hover .black {
+  background: rgba(0, 0, 0, 0.5019607843);
+}
+
+.black {
+  background: transparent;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.blogs h2 {
+  color: #fff;
+  font-size: 24px;
+  padding-top: 40px;
+  opacity: 0.9;
+  transition: 1s;
+}
+
+.blogs:hover h2 {
+  opacity: 1;
+}
+
+.blogs .fecha {
+  margin-right: -50em;
+  transition: 1s;
+}
+
+.blogs:hover .fecha {
+  margin-right: 0%;
+}
+
+.blogs p {
+  text-align: center;
+  font-size: 0px;
+  margin-left: -50em;
+  color: #fff;
+  padding: 1.2em;
+  transition: 1s;
+}
+
+.blogs a {
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  padding: 10px 15px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 4px;
+  display: none;
+  transition: 1s;
+}
+
+.blogs:hover p {
+  margin-left: 0em;
+  font-size: 14px;
+  transition: 1s;
+}
+
+.blogs:hover a {
+  margin-right: 0em;
+  display: inline;
+  transition: 1s;
+}
+
+.blogs a:hover {
+  background: #2fa69b;
+  border-style: none;
+  color: #fff;
+  transition: 0.8s;
+}
+
+.santaRosa {
+  background: url(../img/blog/thumb/santa-rosa-de-Lima-Pacha-Mama-Spirit.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fiestasPatrias {
+  background: url(../img/blog/thumb/fiestas-patrias-Peru-Pacha-Mama-Spirit.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mistura {
+  background: url(../img/blog/thumb/mistura-lima-peru-Pacha-mama-Spirit.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.playas {
+  background: url(../img/blog/thumb/the-best-beaches-of-Peru.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.semanasanta {
+  background: url(../img/blog/thumb/santo_sepulcro.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.actividades {
+  background: url(../img/blog/thumb/actividades-turisticas-cusco.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.boton-card {
+  background: #2fa69b;
+  padding: 10px 10px 10px 10px;
+  border-radius: 4px;
+  color: #fff;
+  transition: 0.6s;
+  border-style: none;
+}
+
+.boton-card:hover {
+  background: #0a877b;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.btn-pacha {
+  background: #6e6e6e;
+  border-style: none;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 5px;
+}
+
+.text-card {
+  color: #2f2f2f;
+  text-align: justify;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  background: #343434;
+  font-size: 15px;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+.h4-foot {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3em;
+}
+
+.linea-foot {
+  height: 3px;
+  width: 15%;
+  background: #2fa69b;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.a-foot {
+  color: #fff;
+  display: block;
+  font-size: 15px;
+}
+
+.a-foot:hover {
+  color: #34e8d7;
+}
+
+.social-foot a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-foot a:hover {
+  color: #34e8d7;
+}
+
+.banner {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.4588235294)), url(../img/panoramico/lares-trek.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.banner-destinos {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.4588235294)), url(../img/panoramico/los-mejores-destinos-para-peru.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.banner-imperdible {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2117647059), rgba(0, 0, 0, 0.1490196078)), url(../img/panoramico/cusco-imperdible-tierras-vivas.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.banner-aventuras {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.4588235294)), url(../img/panoramico/camino-inca-reserva.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.banner-container {
+  margin: auto;
+  width: 45%;
+}
+
+.h3-banner {
+  color: #fff;
+  font-size: 1.8em;
+  text-align: center;
+  padding-top: 2.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.p-banner {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.copy {
+  text-align: center;
+  color: #fff;
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top-style: solid;
+  border-width: 0.1px;
+  padding-bottom: 2em;
+  border-top-color: rgba(255, 255, 255, 0.3411764706);
+}
+
+.copy h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.copy .djm2 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.copy .djm2:hover {
+  color: #00ffe1;
+}
+
+.castellano-es {
+  font-weight: 600;
+  background: #43cfcf;
+  padding: 4px 10px;
+  color: #000;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: 0.8s;
+  text-transform: uppercase;
+}
+
+.castellano-es:hover {
+  background: #fff;
+  color: #000;
+  transition: 0.8s;
+}
+
+.castellano-es:focus {
+  outline: none;
+}
+
+.display-foot {
+  display: block;
+}
+
+.display-foot-2 {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    margin-left: -1.5em;
+  }
+  .h1-destinos {
+    margin-top: 7em;
+    font-size: 30px;
+  }
+}
+@media (max-width: 912px) {
+  .display-foot {
+    display: none;
+  }
+  .display-foot-2 {
+    display: inline;
+  }
+  .logo {
+    margin-left: 0em;
+  }
+  .form-index {
+    margin-top: 55%;
+  }
+  .row-menu {
+    width: 100%;
+  }
+  .icon-menu {
+    float: right;
+  }
+  .h1-index-book {
+    font-size: 1.6em;
+  }
+  .full-img-card {
+    width: 100%;
+  }
+  .h1-destinos {
+    font-size: 1.8em;
+    margin-top: 8em;
+  }
+  .banner-container {
+    width: 90%;
+  }
+  .h3-banner {
+    font-size: 2.4em;
+  }
+  .banner {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.4588235294)), url(../img/responsive/reservas-camino-inca-peru.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    background-size: cover;
+    height: 600px;
+  }
+  .banner-destinos {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.4588235294)), url(../img/responsive/los-mejores-destinos-para-peru.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    background-size: cover;
+  }
+  .banner-aventuras {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6588235294), rgba(0, 0, 0, 0.4588235294)), url(../img/responsive/camino-inca-reserva.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=estilos.map */

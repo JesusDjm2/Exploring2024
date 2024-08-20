@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="app.php" server="ftp.happyperutours.com" local="133149798153820092" remote="133149983400000000" Dst="0" />
+<file name="auth.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="broadcasting.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="cache.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="cors.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="database.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="filesystems.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="hashing.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="logging.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="mail.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="queue.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="sanctum.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="services.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="session.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="view.php" server="ftp.happyperutours.com" local="133129126980000000" remote="133149988800000000" Dst="0" />
+<file name="recaptcha.php" server="ftp.happyperutours.com" local="133149759452880850" remote="133149983400000000" Dst="0" />
+<file name="app.php" server="65.181.111.146" local="133588748711297769" remote="133594966200000000" Dst="0" />
+<file name="auth.php" server="65.181.111.146" local="133588748711438777" remote="133594966200000000" Dst="0" />
+<file name="broadcasting.php" server="65.181.111.146" local="133588748711577755" remote="133594966200000000" Dst="0" />
+<file name="cache.php" server="65.181.111.146" local="133588748711737754" remote="133594966200000000" Dst="0" />
+<file name="cors.php" server="65.181.111.146" local="133588748711868814" remote="133594966200000000" Dst="0" />
+<file name="database.php" server="65.181.111.146" local="133588748712018919" remote="133594966200000000" Dst="0" />
+<file name="filesystems.php" server="65.181.111.146" local="133588748712147832" remote="133594966200000000" Dst="0" />
+<file name="hashing.php" server="65.181.111.146" local="133588748712298703" remote="133594966200000000" Dst="0" />
+<file name="logging.php" server="65.181.111.146" local="133588748712438045" remote="133594966200000000" Dst="0" />
+<file name="mail.php" server="65.181.111.146" local="133588748712616155" remote="133594966200000000" Dst="0" />
+<file name="queue.php" server="65.181.111.146" local="133588748712758071" remote="133594966200000000" Dst="0" />
+<file name="recaptcha.php" server="65.181.111.146" local="133588748712919259" remote="133594966200000000" Dst="0" />
+<file name="sanctum.php" server="65.181.111.146" local="133588748713068856" remote="133594966200000000" Dst="0" />
+<file name="services.php" server="65.181.111.146" local="133588748713221578" remote="133594966200000000" Dst="0" />
+<file name="session.php" server="65.181.111.146" local="133588748713419329" remote="133594966200000000" Dst="0" />
+<file name="view.php" server="65.181.111.146" local="133588748713570590" remote="133594966200000000" Dst="0" />
+<file name="mail.php" server="65.181.111.165" local="133625923506780509" remote="133626134400000000" Dst="0" />
+</dwsync>
